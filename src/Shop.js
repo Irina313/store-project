@@ -4,6 +4,7 @@ import Buttons from "./Buttons";
 import Clothes from "./Clothes";
 import './App.css';
 
+
 function Home() {
     const [clothes, setClothes] = useState(data);
 
@@ -14,6 +15,7 @@ const chosenClothes = (searchTerm) => {
 
 return (
     <div>
+       
     <div className="cont">
     <h1 className="back">MARSEGO</h1>
     </div>

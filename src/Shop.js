@@ -5,7 +5,7 @@ import Clothes from "./Clothes";
 import './App.css';
 
 
-function Home() {
+function Shop() {
     const [clothes, setClothes] = useState(data);
 
 const chosenClothes = (searchTerm) => {
@@ -26,4 +26,4 @@ return (
 
 }
 
-export default Home;
+export default Shop;

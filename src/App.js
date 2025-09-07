@@ -6,11 +6,11 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Shop from './Shop';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Individual from './Individual';
+import LoaderPage from './Loader/LoaderPage';
 
 
 const ShopLazy=React.lazy(() => import('./Shop'));
@@ -30,14 +30,10 @@ return (
 <Link to="/about" className="link">About Us</Link>
 </nav>
 
-<Suspense fallback={<div>Loading...</div>}>
+<Suspense fallback={<LoaderPage/>}>
 <Routes>
   <Route path="/" element={<Home/>} />
-    
-  
-    <Route path="/shop" element={<Shop/>} />
-   
-  
+  <Route path="/shop" element={<ShopLazy/>} />
   <Route path="/contact" element={<Contact/>} />
   <Route path="/individual" element={<Individual/>} />
   <Route path="/about" element={<About/>} />

@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 
 
 function Store() {
     return <div className="main">
-     <a href="http://localhost:3000/shop"><button className="btn">Looking Collection</button></a>  
+     <Link to="/shop"><button className="btn">Looking Collection</button></Link>  
     </div>
     }
     

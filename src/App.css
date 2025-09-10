@@ -137,6 +137,20 @@ button {
   margin-top: 15px;
 }
 
+.discount {
+  font-family: "Libertinus Serif Display", system-ui;
+  background-color: rgb(197, 217, 167);
+  
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 35%;
+  margin-left: 2%;
+  margin-right: 10%;
+  color: black;
+  width: 8%;
+  border-color: transparent;
+}
+
 
 @media all and (max-width: 800px) {
   body{
@@ -184,4 +198,13 @@ button {
       margin-left: 42%;
       width: 25%;
     }
+    .discount {
+      padding: 10px;
+      font-size: 12px;
+      margin-top: 35%;
+      margin-left: 2%;
+      margin-right: 10%;
+      width: 25%;
+    }
+
   }

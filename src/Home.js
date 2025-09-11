@@ -6,7 +6,15 @@ import Swal from "sweetalert2";
 function Store() {
 
 const handleAlert = () => {
-    Swal.fire("Get 15% off on your first order!");
+    const { value: email } = Swal.fire({
+        title: "Get 15% Off Your First Order",
+        input: "email",
+        inputLabel: "Your email address to receive access to promotions",
+        inputPlaceholder: "Enter your email address"
+      });
+      if (email) {
+        Swal.fire(`Entered email: ${email}`);
+      }
 }
    
     return <div className="main">
